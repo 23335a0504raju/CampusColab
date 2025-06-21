@@ -1,6 +1,9 @@
 #!/bin/bash
 set -o errexit
 
+
+pip install -r backend/requirements.txt
+
 # Create directories
 mkdir -p /opt/render/project/src/backend/media
 mkdir -p /opt/render/project/src/backend/staticfiles
