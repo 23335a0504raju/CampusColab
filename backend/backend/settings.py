@@ -19,7 +19,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-fallback-key-for-dev-only'
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
-    "https://campuscolab.onrender.com", 
+    "campuscolab.onrender.com", 
     "campus-colab.vercel.app",
     "localhost",
     "127.0.0.1",
@@ -28,7 +28,7 @@ ALLOWED_HOSTS = [
 # Security settings
 CSRF_TRUSTED_ORIGINS = [
     "https://campus-colab.vercel.app",
-    "https://https://campuscolab.onrender.com",
+    "https://campuscolab.onrender.com",
     "http://localhost:3000",
 ]
 CORS_ALLOW_ALL_ORIGINS = False
