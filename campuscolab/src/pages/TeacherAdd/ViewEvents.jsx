@@ -27,7 +27,7 @@ const ViewEvents = () => {
   return `${BASE_URL}/media/${cleanPath}`;
 };
   
-console.log('Original:', originalUrl, 'Cleaned:', cleanedUrl);
+
   const fetchEvents = async () => {
     try {
       setLoading(true);
