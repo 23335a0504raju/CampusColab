@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "https://campuscolab-backend.onrender.com/api";
+const API_URL = "https://campuscolab.onrender.com/api";
 
 const Chatbox = ({ userDetails }) => {
   const navigate = useNavigate();

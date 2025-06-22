@@ -59,7 +59,7 @@ const TeacherForm = () => {
     }
   
     try {
-      const response = await fetch("https://campuscolab-backend.onrender.com/api/teacherview", {
+      const response = await fetch("https://campuscolab.onrender.com/api/teacherview", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ const TeacherForm = () => {
     }
     e.preventDefault();
 
-    const endpoint = "https://campuscolab-backend.onrender.com/api/teachercreate";
+    const endpoint = "https://campuscolab.onrender.com/api/teachercreate";
     
     const payload = {
       teachername: teacher.name,

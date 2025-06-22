@@ -1,5 +1,5 @@
 import Button from '@mui/material/Button';
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { FaUserShield } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
@@ -21,7 +21,7 @@ const Teacher = () => {
 
     const handleClick = async () => {
 
-        const endpoint = "https://campuscolab-backend.onrender.com/api/teacherlogin";
+        const endpoint = "https://campuscolab.onrender.com/api/teacherlogin";
         const payload = {
             teachername: formData.teachername,
             password: formData.password

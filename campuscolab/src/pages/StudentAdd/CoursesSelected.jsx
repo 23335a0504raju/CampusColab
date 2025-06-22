@@ -1,8 +1,8 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import imagePlaceholder from "../../Assets/1.jpg";
 
-const BASE_URL = "https://campuscolab-backend.onrender.com";
+const BASE_URL = "https://campuscolab.onrender.com";
 
 const CoursesSelected = () => {
   const [studentCourses, setStudentCourses] = useState([]);

@@ -10,7 +10,7 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import { default as React, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 const StudentForm = () => {
@@ -69,7 +69,7 @@ const StudentForm = () => {
             console.error("No access token found. Please log in.");
             return;
           }
-          const response = await fetch("https://campuscolab-backend.onrender.com/api/studentview", {
+          const response = await fetch("https://campuscolab.onrender.com/api/studentview", {
             method: "GET",
             headers: {
               "Content-Type": "application/json",

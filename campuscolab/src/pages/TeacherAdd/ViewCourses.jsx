@@ -7,7 +7,7 @@ const ViewCourse = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const BASE_URL = "https://campuscolab-backend.onrender.com";
+  const BASE_URL = "https://campuscolab.onrender.com";
 
     const cleanMediaUrl = (url) => {
     if (!url) return null;

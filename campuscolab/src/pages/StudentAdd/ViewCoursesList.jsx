@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ViewCoursesList = () => {
   const [courses, setCourses] = useState([]);
   const [openIndex, setOpenIndex] = useState(null);
-  const BASE_URL = "https://campuscolab-backend.onrender.com";
+  const BASE_URL = "https://campuscolab.onrender.com";
   const imagePlaceholder = "/default-image.jpg"; // Define a default image
 
   const toggleContent = (index) => {

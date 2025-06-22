@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Feed.css";
 
 const Feed = () => {
@@ -16,7 +16,7 @@ const Feed = () => {
           return;
         }
 
-        const response = await fetch("https://campuscolab-backend.onrender.com/api/feed/", {
+        const response = await fetch("https://campuscolab.onrender.com/api/feed/", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

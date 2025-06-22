@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { default as profilePic } from "../../Assets/home.jpg";
 import "./Profile.css";
@@ -22,7 +22,7 @@ const Profile = () => {
           return;
         }
 
-        const response = await fetch("https://campuscolab-backend.onrender.com/api/studentprofile", {
+        const response = await fetch("https://campuscolab.onrender.com/api/studentprofile", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

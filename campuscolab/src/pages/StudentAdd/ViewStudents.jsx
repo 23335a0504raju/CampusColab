@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ViewStudents = () => {
   const [students, setStudents] = useState([]);
@@ -16,7 +16,7 @@ const ViewStudents = () => {
         console.error("No access token found. Please log in.");
         return;
       }
-      const response = await fetch("https://campuscolab-backend.onrender.com/api/studentview", {
+      const response = await fetch("https://campuscolab.onrender.com/api/studentview", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const ViewStudents = () => {
     if (!selectedStudent) return;
   
     try {
-      const response = await fetch(`https://campuscolab-backend.onrender.com/api/studentdelete/${selectedStudent}/`, {
+      const response = await fetch(`https://campuscolab.onrender.com/api/studentdelete/${selectedStudent}/`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

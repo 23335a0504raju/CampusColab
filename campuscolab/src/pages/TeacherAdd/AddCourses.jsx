@@ -49,7 +49,7 @@ const AddCourses = () => {
 
     try {
       const token = sessionStorage.getItem("accessToken"); // Fetch auth token if required
-      const response = await fetch("https://campuscolab-backend.onrender.com/api/add-course", {
+      const response = await fetch("https://campuscolab.onrender.com/api/add-course", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`, // Ensure authentication

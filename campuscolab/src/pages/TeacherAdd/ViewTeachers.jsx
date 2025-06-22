@@ -16,7 +16,7 @@ const ViewTeachers = () => {
     }
   
     try {
-      const response = await fetch("https://campuscolab-backend.onrender.com/api/teacherview", {
+      const response = await fetch("https://campuscolab.onrender.com/api/teacherview", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const ViewTeachers = () => {
     if (!selectedTeacher) return;
   
     try {
-      const response = await fetch(`https://campuscolab-backend.onrender.com/api/teacherdelete/${selectedTeacher}/`, {
+      const response = await fetch(`https://campuscolab.onrender.com/api/teacherdelete/${selectedTeacher}/`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

@@ -50,7 +50,7 @@ const AddEvents = () => {
   
     try {
       const token = sessionStorage.getItem("accessToken");
-      const response = await fetch("https://campuscolab-backend.onrender.com/api/add-event", {
+      const response = await fetch("https://campuscolab.onrender.com/api/add-event", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

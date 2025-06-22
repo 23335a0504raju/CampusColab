@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { RiLockPasswordFill } from "react-icons/ri";
 
 import Button from '@mui/material/Button';
@@ -21,7 +21,7 @@ const Admin = () => {
 
     const handleClick= async()=>{
 
-      const endpoint="https://campuscolab-backend.onrender.com/api/adminloginview";
+      const endpoint="https://campuscolab.onrender.com/api/adminloginview";
       const payload={
         username:formData.username,
         password:formData.password

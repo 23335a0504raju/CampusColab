@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Profile = ({ userDetails }) => {
@@ -28,7 +28,7 @@ const Profile = ({ userDetails }) => {
           return;
         }
 
-        const response = await fetch("https://campuscolab-backend.onrender.com/api/profileview", {
+        const response = await fetch("https://campuscolab.onrender.com/api/profileview", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -1,5 +1,5 @@
 import Button from '@mui/material/Button';
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { CiBarcode } from "react-icons/ci";
 import { FaBuilding, FaUserShield } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -69,7 +69,7 @@ const AddAdmin = () => {
       return;
     }
   
-    const endpoint = "https://campuscolab-backend.onrender.com/api/adminlogin";
+    const endpoint = "https://campuscolab.onrender.com/api/adminlogin";
     const payload = {
       username: formData.adminname,
       password: formData.password,
