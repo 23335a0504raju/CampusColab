@@ -6,7 +6,7 @@ const ViewEvents = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const BASE_URL = "hhttps://campuscolab.onrender.com";
+  const BASE_URL = "https://campuscolab.onrender.com";
 
   // Improved URL cleaning function
   const cleanMediaUrl = (url) => {
