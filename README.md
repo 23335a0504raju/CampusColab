@@ -97,7 +97,7 @@ At least **80% coverage** is implemented for authentication & task CRUD APIs.
 ## 🌍 Deployment  
 
 - 🔗 **Frontend (Vercel):** [https://campus-colab.vercel.app/](https://campus-colab.vercel.app/)  
-- 🔗 **Backend (Render/Heroku):**
+- 🔗 **Backend (Render/Heroku):**https://campuscolab.onrender.com
 
 
 
