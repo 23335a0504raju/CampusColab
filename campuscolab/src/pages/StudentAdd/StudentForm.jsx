@@ -94,7 +94,7 @@ const StudentForm = () => {
     }
     e.preventDefault();
 
-    const endpoint = "https://campuscolab-backend.onrender.com/api/studentcreate";
+    const endpoint = "https://campuscolab.onrender.com/api/studentcreate";
     
     const payload = {
       studentname: student.name,

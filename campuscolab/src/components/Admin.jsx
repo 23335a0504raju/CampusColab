@@ -18,6 +18,9 @@ const Admin = () => {
     const handleChange = (e) => {
       setFormData({ ...formData, [e.target.name]: e.target.value });
     };
+    const handleAddAdmin=()=>{
+      navigate('/addadmin');
+    }
 
     const handleClick= async()=>{
 
@@ -78,6 +81,7 @@ const Admin = () => {
             
           </div>
           <Button variant="contained" onClick={handleClick}>Login</Button>
+          <Button variant="contained" onClick={handleAddAdmin}>Add Admin</Button>
          
         </div>
     </div>
